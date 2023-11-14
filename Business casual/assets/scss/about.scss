@@ -1,0 +1,203 @@
+@import "./base/reset";
+body {
+  background-image: linear-gradient(
+      rgba(47, 23, 15, 0.65),
+      rgba(47, 23, 15, 0.65)
+    ),
+    url("https://startbootstrap.github.io/startbootstrap-business-casual/assets/img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  header {
+    text-align: center;
+    line-height: 1;
+    margin: 80px 0;
+    span {
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: rgb(230, 167, 86);
+    }
+    h1 {
+      font-weight: 100;
+      font-size: 5rem;
+      color: #f6e1c5;
+    }
+  }
+  nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(47, 23, 15, 0.9);
+    .menu {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+      gap: 60%;
+      h3 {
+        display: none;
+        color: #e6a756;
+      }
+      .fa-bars {
+        display: none;
+        color: #e6a756;
+      }
+    }
+    .showmenu {
+      display: none;
+      .ulshow {
+        background-color: rgba(47, 23, 15, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .fa-xmark {
+          color: #e6a756;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25px;
+      gap: 65px;
+      li {
+        cursor: pointer;
+        font-weight: bold;
+        a {
+          color: rgba(255, 255, 255, 0.7);
+          transition: all 600ms;
+          &:hover {
+            color: rgba(174, 173, 173, 0.75);
+          }
+        }
+      }
+    }
+  }
+  .sec1 {
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    .container {
+      .photo {
+        margin: 80px 0 0 100px;
+        z-index: 0;
+        img {
+          border-radius: 10px;
+          width: 90%;
+          height: auto;
+        }
+      }
+      .whitebox {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        width: 60%;
+        background-color: #f6e1c5;
+        padding: 50px;
+        border-radius: 10px;
+        z-index: 1;
+
+        span {
+          font-weight: 800;
+        }
+        h2 {
+          font-weight: 100;
+          font-size: 40px;
+          color: rgb(94, 94, 94);
+          padding-bottom: 20px;
+        }
+        p {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  footer {
+    max-width: 100%;
+    height: 16vh;
+    background-color: rgba(47, 23, 15, 0.9);
+    p {
+      color: #f6e1c5;
+      text-align: center;
+      padding: 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    header {
+      display: none;
+    }
+    nav {
+      max-width: 100%;
+      ul {
+        display: none;
+      }
+      .menu {
+        h3,
+        .fa-bars {
+          display: block;
+        }
+      }
+    }
+    .sec1 {
+      position: static;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    header {
+      display: none;
+    }
+    nav {
+      max-width: 100%;
+      ul {
+        display: none;
+      }
+      .menu {
+        h3,
+        .fa-bars {
+          display: block;
+        }
+      }
+    }
+    .sec1 {
+      position: static;
+      height: 130vh;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    header {
+      display: none;
+    }
+    nav {
+      max-width: 100%;
+      ul {
+        display: none;
+      }
+      .menu {
+        h3,
+        .fa-bars {
+          display: block;
+        }
+      }
+    }
+    .sec1 {
+      position: static;
+      height: 150vh;
+    }
+  }
+}

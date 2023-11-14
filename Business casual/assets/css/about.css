@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("https://startbootstrap.github.io/startbootstrap-business-casual/assets/img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body header {
+  text-align: center;
+  line-height: 1;
+  margin: 80px 0;
+}
+body header span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: rgb(230, 167, 86);
+}
+body header h1 {
+  font-weight: 100;
+  font-size: 5rem;
+  color: #f6e1c5;
+}
+body nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(47, 23, 15, 0.9);
+}
+body nav .menu {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  gap: 60%;
+}
+body nav .menu h3 {
+  display: none;
+  color: #e6a756;
+}
+body nav .menu .fa-bars {
+  display: none;
+  color: #e6a756;
+}
+body nav .showmenu {
+  display: none;
+}
+body nav .showmenu .ulshow {
+  background-color: rgba(47, 23, 15, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body nav .showmenu .ulshow .fa-xmark {
+  color: #e6a756;
+}
+body nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  gap: 65px;
+}
+body nav ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+body nav ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 600ms;
+}
+body nav ul li a:hover {
+  color: rgba(174, 173, 173, 0.75);
+}
+body .sec1 {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+}
+body .sec1 .container .photo {
+  margin: 80px 0 0 100px;
+  z-index: 0;
+}
+body .sec1 .container .photo img {
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+}
+body .sec1 .container .whitebox {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 60%;
+  background-color: #f6e1c5;
+  padding: 50px;
+  border-radius: 10px;
+  z-index: 1;
+}
+body .sec1 .container .whitebox span {
+  font-weight: 800;
+}
+body .sec1 .container .whitebox h2 {
+  font-weight: 100;
+  font-size: 40px;
+  color: rgb(94, 94, 94);
+  padding-bottom: 20px;
+}
+body .sec1 .container .whitebox p {
+  line-height: 30px;
+}
+body footer {
+  max-width: 100%;
+  height: 16vh;
+  background-color: rgba(47, 23, 15, 0.9);
+}
+body footer p {
+  color: #f6e1c5;
+  text-align: center;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  body header {
+    display: none;
+  }
+  body nav {
+    max-width: 100%;
+  }
+  body nav ul {
+    display: none;
+  }
+  body nav .menu h3,
+  body nav .menu .fa-bars {
+    display: block;
+  }
+  body .sec1 {
+    position: static;
+  }
+}
+@media screen and (max-width: 700px) {
+  body header {
+    display: none;
+  }
+  body nav {
+    max-width: 100%;
+  }
+  body nav ul {
+    display: none;
+  }
+  body nav .menu h3,
+  body nav .menu .fa-bars {
+    display: block;
+  }
+  body .sec1 {
+    position: static;
+    height: 130vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  body header {
+    display: none;
+  }
+  body nav {
+    max-width: 100%;
+  }
+  body nav ul {
+    display: none;
+  }
+  body nav .menu h3,
+  body nav .menu .fa-bars {
+    display: block;
+  }
+  body .sec1 {
+    position: static;
+    height: 150vh;
+  }
+}/*# sourceMappingURL=about.css.map */
